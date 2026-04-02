@@ -1,5 +1,6 @@
 # ChimeraX MCP Server
 
+[![PyPI](https://img.shields.io/pypi/v/chimerax-mcp)](https://pypi.org/project/chimerax-mcp/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 
@@ -63,16 +64,16 @@ export CHIMERAX_BIN="/path/to/ChimeraX"
 ## Installation
 
 ```bash
-pip install git+https://github.com/mahynotch/chimerax-mcp.git
+pip install chimerax-mcp
 ```
 
 <details>
 <summary>Other install methods</summary>
 
-From PyPI (once published):
+From GitHub (latest dev):
 
 ```bash
-pip install chimerax-mcp
+pip install git+https://github.com/mahynotch/chimerax-mcp.git
 ```
 
 From source (development):
