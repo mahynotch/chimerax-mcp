@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "chimerax": {
+      "type": "stdio",
+      "command": "python",
+      "args": ["-m", "chimerax_mcp"],
+      "env": {}
+    }
+  }
+}
