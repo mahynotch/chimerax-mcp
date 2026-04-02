@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "chimerax-mcp"
-version = "0.1.0"
+version = "0.1.1"
 description = "MCP server that connects AI coding tools to UCSF ChimeraX for natural-language protein editing"
 readme = "README.md"
 license = "MIT"

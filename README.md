@@ -15,17 +15,17 @@ Just say *"open 6VXX, mutate A:501 to Lys, color by hydrophobicity, and take a s
 **Load & Visualize**
 > *"Load 3LJ5, show only chain A, make it publication-ready with rainbow coloring and transparent surface"*
 
-![Structure workflow](assets/promo_3lj5.gif)
+![Structure workflow](https://raw.githubusercontent.com/mahynotch/chimerax-mcp/main/assets/promo_3lj5.gif)
 
 **Mutate Residue**
 > *"Open 6VXX, zoom to residue A:501, highlight it, mutate Thr to Lys, show nearby residues"*
 
-![Mutation workflow](assets/promo_mutation.gif)
+![Mutation workflow](https://raw.githubusercontent.com/mahynotch/chimerax-mcp/main/assets/promo_mutation.gif)
 
 **Electrostatic & Hydrophobicity Surfaces**
 > *"Load 1AKI, show surface, color by electrostatic potential, then switch to hydrophobicity"*
 
-![Electrostatic surface](assets/promo_electrostatic.gif)
+![Electrostatic surface](https://raw.githubusercontent.com/mahynotch/chimerax-mcp/main/assets/promo_electrostatic.gif)
 
 ## Features
 
