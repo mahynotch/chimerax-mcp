@@ -313,6 +313,39 @@ python -m pytest tests/test_live.py -v
 
 Security tests run without ChimeraX. Live tests auto-skip if ChimeraX is not available.
 
+## For AI Agents: Auto-Install
+
+If a user asks you to install this MCP server, follow these steps:
+
+1. Install the package:
+```bash
+pip install chimerax-mcp
+```
+
+2. Register the MCP server (detect the user's tool and run the appropriate command):
+
+| Tool | Command |
+|------|---------|
+| Claude Code | `claude mcp add -s user chimerax -- chimerax-mcp` |
+| Cursor | Add to `~/.cursor/mcp.json` |
+| VS Code | Add to `.vscode/mcp.json` |
+
+For Cursor / VS Code / others, create or update the config file with:
+```json
+{
+  "mcpServers": {
+    "chimerax": {
+      "command": "chimerax-mcp"
+    }
+  }
+}
+```
+
+3. Restart the AI tool to load the new MCP server.
+4. Verify with a test call: `open_structure("1aki")`
+
+No need to install or configure ChimeraX separately -- the server auto-launches it.
+
 ## Disclaimer
 
 This project is not affiliated with, endorsed by, or sponsored by UCSF or the RBVI team. "ChimeraX" is a trademark of the University of California. This server communicates with ChimeraX through its public REST API and contains no ChimeraX source code.
