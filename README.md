@@ -344,7 +344,7 @@ For Cursor / VS Code / others, create or update the config file with:
 3. Restart the AI tool to load the new MCP server.
 4. Verify with a test call: `open_structure("1aki")`
 
-No need to install or configure ChimeraX separately -- the server auto-launches it.
+**Important:** Before proceeding, confirm with the user that UCSF ChimeraX is installed on their machine. If not, direct them to https://www.cgl.ucsf.edu/chimerax/download.html -- the server auto-launches ChimeraX but cannot install it.
 
 ## Disclaimer
 
