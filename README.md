@@ -3,19 +3,26 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 
-An MCP server that connects any MCP-compatible AI coding tool to UCSF ChimeraX via its REST API, enabling natural-language protein editing with real-time visual feedback.
+**Talk to proteins in natural language.** This MCP server connects AI coding tools (Claude Code, Cursor, VS Code, etc.) to [UCSF ChimeraX](https://www.cgl.ucsf.edu/chimerax/), letting you load, edit, visualize, and analyze protein structures through conversation -- no manual ChimeraX commands needed.
+
+Just say *"open 6VXX, mutate A:501 to Lys, color by hydrophobicity, and take a screenshot"* and watch ChimeraX do it in real time.
+
+> This project is in early development and actively looking for contributors. Bug reports, feature requests, and pull requests are very welcome -- check out the [issues page](https://github.com/mahynotch/chimerax-mcp/issues) or open a PR!
 
 ## Demos
 
-**Load & Visualize** -- Load a 12-chain portal protein, isolate a monomer, apply publication styling:
+**Load & Visualize**
+> *"Load 3LJ5, show only chain A, make it publication-ready with rainbow coloring and transparent surface"*
 
 ![Structure workflow](assets/promo_3lj5.gif)
 
-**Mutate Residue** -- Zoom to a site, mutate Thr->Lys, inspect the change:
+**Mutate Residue**
+> *"Open 6VXX, zoom to residue A:501, highlight it, mutate Thr to Lys, show nearby residues"*
 
 ![Mutation workflow](assets/promo_mutation.gif)
 
-**Electrostatic & Hydrophobicity Surfaces** -- Coulombic ESP and Molecular Lipophilicity Potential:
+**Electrostatic & Hydrophobicity Surfaces**
+> *"Load 1AKI, show surface, color by electrostatic potential, then switch to hydrophobicity"*
 
 ![Electrostatic surface](assets/promo_electrostatic.gif)
 
@@ -304,6 +311,12 @@ python -m pytest tests/test_live.py -v
 ```
 
 Security tests run without ChimeraX. Live tests auto-skip if ChimeraX is not available.
+
+## Disclaimer
+
+This project is not affiliated with, endorsed by, or sponsored by UCSF or the RBVI team. "ChimeraX" is a trademark of the University of California. This server communicates with ChimeraX through its public REST API and contains no ChimeraX source code.
+
+Users are responsible for complying with [ChimeraX's license terms](https://www.cgl.ucsf.edu/chimerax/license.html). ChimeraX is free for academic and non-commercial use; commercial use requires a separate license from UCSF.
 
 ## License
 
